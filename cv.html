@@ -2,14 +2,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <script src="script.js" async></script>
     <title>Mon cv page</title>
 </head>
 <body>
     
     <!-- La partie principale de mon cv -->
-     <main>
+     <main class="main_cv">
 
         <!-- Premiere partie qui contient le profil -->
          <section id="profil">
@@ -23,62 +25,78 @@
 
                     </div>
                     <div id="imageProfil">
-                        <img src="" alt="Image de profil" id="imageProfil">
+                        <img src="moi.jpg" alt="Image de profil" id="imageProfil">
                     </div>
                 </div>
 
             <!-- La partie qui contient le contact -->
                 <div id="contact">
-                <div class="font">
-                    <span class="blue">icone</span>
-                    <h2>Contact</h2>
-                </div>
-                <div class="num">
-                    <span class="blue">icone</span>
-                    <h3>00223 82 20 07 66</h3>
-                </div>
-                <div class="email">
-                    <span class="icone">icone</span>
-                    <h3>colonel.diallo19@gmail.com</h3>
-                </div>
-                <div class="adresse">
-                    <span class="icone">icone</span>
-                    <h3>Rue 123, Bamako, Mali</h3>
-                </div>
-                </div>
-
-            <!-- La partie qui contient les education -->
-                <div id="education">
                     <div class="font">
-                        <span class="blue">icone</span>
-                        <h2>Education</h2>
+                        <span class="blue"><i class="fa-solid fa-user"></i></span>
+                        <h2>Contact</h2>
                     </div>
-                    <div class="ecole">
-                        <span class="blue">icone</span>
-                        <h3>Institut Supérieur de Technologie, Bamako, Mali</h3>
+                    <div class="font fontIcone">
+                        <span class="icone"><i class="fa-solid fas fa-phone-volume"></i></span>
+                        <h3>00223 82 20 07 66</h3>
                     </div>
-                    <div class="formation">
-                        <span class="blue">icone</span>
-                        <h3>Licence en Informatique</h3>
+                    <div class="font fontIcone">
+                        <span class="icone"><i class="fa-solid fa-envelope"></i></span>
+                        <h3>colonel.diallo19@gmail.com</h3>
+                    </div>
+                    <div class="font fontIcone">
+                        <span class="icone"><i class="fa-solid fa-location-dot"></i></span>
+                        <h3>Rue 123, Bamako, Mali</h3>
                     </div>
                 </div>
 
-            <!-- la partie qui contient mes references -->
-                <div id="references">
-                    <div class="font">
-                        <span class="blue">icone</span>
-                        <h2>References</h2>
+            <!-- La partie qui contient les competence -->
+             <div id="competence">
+                <!-- La partie qui contient les education -->
+
+                    <div id="education">
+                        <div class="font">
+                            <span class="blue"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <h2>Education</h2>
+                        </div>
+                        <div>
+                            <h3>INTEC-SUP</h3>
+                            <p>
+                                <strong>2023-2024</strong><br>
+                                Licence en Programmation et Développement Informatique (PDI) « mention BIEN » À L’INSTITUT SUPERIEUR DES TECHNIQUES ECONOMIQUES COMPTABLES ET COMMERCIALES (INTEC-SUP) <br>
+                            </p>
+                            <p>
+                                <strong>2022-2023</strong><br>
+                                DIPLOME UNIVERSITAIRE TECHNOLOGIE(DUT) « mention Très bien » À L’INSTITUT SUPERIEUR DES TECHNIQUES ECONOMIQUES COMPTABLES ET COMMERCIALES
+                                (INTEC-SUP) <br>
+                            </p>
+                        </div>
+                        <div>
+                            <h3>L.BAF</h3>
+                            <p>
+                                <strong>2017-2018</strong><br>
+                                Baccalauréat en Sciences Expérimentales « mention BIEN » À L’LYCÉE PUBLIC DE BAFOULABE <br>
+                            </p>
+                        </div>
                     </div>
-                    <div class="nom">
-                        <span class="blue">icone</span>
-                        <h3>Mr Massiré Kamara</h3>
-                        <p>Ingenieur en reseau et Telecommunication</p>
+
+                <!-- la partie qui contient mes references -->
+                    <div id="references">
+                        <div class="font">
+                            <span class="blue"><i class="fa-solid fa-users"></i></span>
+                            <h2>References</h2>
+                        </div>
+                        <div class="font fontIcone">
+                            <span class="icone"><i class="fa-solid fa-user"></i></span>
+                            <h3>Mr Massiré Kamara</h3>
+                        </div>
+                        <p>Ingénieur réseau Telecom, 
+                            Développeur FulStack et Enseignant à l’INTEC-SUP     </p>
+                        <div class="font fontIcone">
+                            <span class="icone"><i class="fa-solid fa-phone"></i></span>
+                            <h3>00223 79 47 07 47</h3>
+                        </div>
                     </div>
-                    <div class="contact">
-                        <span class="blue">icone</span>
-                        <h3>00223 76 47 07 47</h3>
-                    </div>
-                </div>
+             </div>
             <!-- Fin de cette section -->
          </section>
         <!-- Fin de la premiere section -->
@@ -86,51 +104,172 @@
         <!-- Deuxieme partie qui contient les experiences professionnelles -->
          <section id="cv_partie_droite">
             <!-- La partie qui contient le detail du profil -->
-                <div class="profilDetail">
-                    <span class="font">icone</span>
-                    <h2>Profil</h2>
+                <div id="profilDetail">
+                    <div class="font">
+                        <span class="blue"><i class="fa-solid fa-user"></i></span>
+                        <h2>Profil</h2>
+                    </div>
                     <p>Étudiant en préparation de Master en Informatique, passionné par le domaine des TIC. Je suis déterminé à mettre en valeur mes compétences techniques et à acquérir une compréhension approfondie des concepts de l’informatique et du développement informatique pour contribuer de manière significative à des projets axés sur la connectivité et la mise en place des systèmes qui seront disponibles en temps réel via internet en vue de faciliter certaines tâches.</p>
                 </div>
             <!-- La partie qui contient les experiences professionnelles -->
 
             <!-- La partie qui va contenir l'experience professionnelle -->
-             <div class="experience_prof">
+                <div id="experience">
                 <div class="font">
-                    <span class="font">icone</span>
-                    <h2>site web de vente des livres en ligne <span class="droite">2020-2021</span></h2>
-                    <p>
-                        avec PHP et HTML/CSS/JS, c’était mon premier projet concret projet dans lequel j’ai eu des connaissances de base des langages citer ci-haut.  
-                    </p>
+                    <span class="blue"><i class="fa-solid fa-briefcase"></i></span>
+                    <h2>Experiences</h2>
                 </div>
-
-                <div class="font">
-                    <span class="font">icone</span>
-                    <h2>application de gestion de stock pour un magasin <span class="droite">2022-2023</span></h2>
-                    <p>
-                        avec WinDev, un projet qui m’a permis d’acquérir plus de connaissances avec cet atelier.  
-                    </p>
+                <div class="fonts">
+                    <span class="icone"><i class="fa-solid fa-arrow-right"></i></span>
+                    <h3>site web de vente des livres en ligne </h3>
                 </div>
-
-                <div class="font">
-                    <span class="font">icone</span>
-                    <h2>Projet de Fin de cycle À L’UNIVERSITÉ <span class="droite">2023-2024</span></h2>
-                    <p>
-                        Une application web qui permet de centraliser les ressources éducatives des étudiants dans l’espaces Universitaires. 
-                    </p>
+                <span class="droite">2020-2021</span>
+                <p>
+                    avec PHP et HTML/CSS/JS, c’était mon premier projet concret projet dans lequel j’ai eu des connaissances de base des langages citer ci-haut.  
+                </p>
+                <div class="fonts">
+                    <span class="icone"><i class="fa-solid fa-arrow-right"></i></span>
+                    <h3>application de gestion de stock pour un magasin</h3>
                 </div>
-
-
-
-                <div class="font">
-                    <span class="font">icone</span>
-                    <h2>Projet Fini MA BOUTIQUE <span class="droite">2023-2024</span></h2>
-                    <p>
-                        Ma boutique est une application web qui va permettre aux gestionnaire de bien gérer la comptabilité(l’Entré la sortie le bilan et l’inventaire en fonction des années choisis) de leurs boutique.
-                    </p>
+                <span class="droite">2022-2023</span>
+                <p>
+                    avec WinDev, un projet qui m’a permis d’acquérir plus de connaissances avec cet atelier.  
+                </p>
+                <div class="fonts">
+                    <span class="icone"><i class="fa-solid fa-arrow-right"></i></span>
+                    <h3>Projet de Fin de cycle À L’UNIVERSITÉ</h3>
                 </div>
+                <span class="droite">2023-2024</span>
+                <p>
+                    Une application web qui permet de centraliser les ressources éducatives des étudiants dans l’espaces Universitaires. 
+                </p>
+                <div class="fonts">
+                    <span class="icone"><i class="fa-solid fa-arrow-right"></i></span>
+                    <h3>Projet Fini MA BOUTIQUE</h3>
+                </div>
+                <span class="droite">2023-2024</span>
+                <p>
+                    Ma boutique est une application web qui va permettre aux gestionnaire de bien gérer la comptabilité(l’Entré la sortie le bilan et l’inventaire en fonction des années choisis) de leurs boutique.
+                </p>
 
-             </div>
+                </div>
             <!-- Fin de la partie qui contient les experiences professionnelles -->
+
+            <!-- Debut de la partie Competences -->
+                <div id="competences">
+                    <div class="font">
+
+                        <span class="blue"><i class="fa-solid fa-chart-pie"></i></span>
+
+                        <h2>Compétences</h2>
+                    </div>
+                    <div class="comp">
+                        <div class="left">
+                            <div class="bar">
+                                <h3>SQL</h3>
+                                <div class="progressBar">
+                                    <span class="progress1"></span>
+                                    <span class="progress2"></span>
+                                </div>
+                            </div>
+                                
+                            <div class="bar">
+                                <h3>PHP</h3>
+                                <div class="progressBar">
+                                    <span class="progress1"></span>
+                                    <span class="progress2"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="bar">
+                                <h3>LARAVEL</h3>
+                                <div class="progressBar">
+                                    <span class="progress5"></span>
+                                    <span class="progress6"></span>
+                                </div>
+                            </div>
+
+                            <div class="bar">
+                                <h3>ANGULAR</h3>
+                                <div class="progressBar">
+                                    <span class="progress3"></span>
+                                    <span class="progress4"></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="right">
+                            <div class="bar">
+                                <h3>HTML/CSS/JS</h3>
+                                <div class="progressBar">
+                                    <span class="progress1"></span>
+                                    <span class="progress2"></span>
+                                </div>
+                            </div>
+                                
+                            <div class="bar">
+                                <h3>OFFICE</h3>
+                                <div class="progressBar">
+                                    <span class="progress1"></span>
+                                    <span class="progress2"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="bar">
+                                <h3>LINUX</h3>
+                                <div class="progressBar">
+                                    <span class="progress3"></span>
+                                    <span class="progress4"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="bar">
+                                <h3>GIT/GITHUB</h3>
+                                <div class="progressBar">
+                                    <span class="progress3"></span>
+                                    <span class="progress4"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+    
+                </div>
+            <!-- Fin de la partie Competences -->
+
+            <!-- Debut de la partie Loisirs -->
+                <div id="loisirs">
+                    <div class="langue">
+                        <div class="font">
+                            <span class="blue"><i class="fa-solid fa-map"></i></span>
+                            <h2>Langues</h2>
+                        </div>
+                        <div class="liste">
+                            <ul>
+                                <li>Français</li>
+                                <li>Anglais</li>
+                                <li>Bambara</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="loisir">
+                        <div class="font">
+                            <span class="blue"><i class="fa-solid fa-flag-checkered"></i></span>
+                            <h2>loisirs</h2>
+                        </div>
+                        <div class="liste">
+                            <ul>
+                                <li>Lecture</li>
+                                <li>Musique</li>
+                                <li>Auto-formation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            <!-- Fin de la partie Loisirs -->
+                <center><button type="button" id="telecharger" onclick="alert('Le CV telecharger avec succès!!!')">Telecharger</button></center>
          </section>
         <!-- Fin de la deuxieme section -->
 
