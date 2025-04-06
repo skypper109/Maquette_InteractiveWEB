@@ -32,6 +32,32 @@ async function telechargerPDF() {
     });
 }
 
+function generatePDF() {
+    
+    // Récupère le bouton pour le cacher temporairement
+    const bouton = document.getElementById('telecharger');
+    const couleur = document.getElementById('clr');
+    html2pdf().from(document.body).save('cv.pdf')
+
+    // Affiche à nouveau le bouton après la capture
+    bouton.style.visibility = 'visible';
+    couleur.style.visibility = 'visible';
+
+
+}
+
+// function generatePDF() {
+//     let pdf = new jsPDF("p", "pt", "a4") ;
+//     let options = { pagesplit : true } ;
+  
+//     pdf.addHTML($("body"), options, () => {
+//       pdf.save("cv.pdf") ;
+//     }) ;
+//   }
+  
+  
+//   generatePDF() ;
+
 function changeBgCouleur(couleur){
     // Change la couleur de la variable --bg-couleur dans la racine :root de la page
     document.documentElement.style.setProperty('--bg-couleur', couleur);
