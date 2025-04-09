@@ -1,6 +1,7 @@
 /* Declaration de la variable Couleur */
 :root {
     --bg-couleur: #080149;
+    --bg-couleur2: #000000;
 }
 
 body {
@@ -232,13 +233,19 @@ button i{
     color: #fff;
     font-size: 30px;
 }
+@page {
+    size: 21cm 29.7cm;
+    margin: 30mm 45mm 30mm 45mm;
+     /* change the margins as you want them to be. */
+}
 
 .main_cv {
-    width: 60%;
+    width: 60vw ;
     margin: 0 auto;
     padding: 0 10px 0 10px;
     background-color: #fff;
     display: grid;
+    /* height: 100vh; */
     grid-template-rows: auto;
     /* grid-template-columns: 1fr 1fr; */
     grid-template-areas:
@@ -971,4 +978,210 @@ button i{
     }
 }
 
+/* Media pour l'impression sur A4 */
+@media print {
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    #clr{
+        display: none;
+    }
+    #telecharger {
+        display: none;
+    }
+    .main_cv {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    #profil {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #nom{
+        margin: 0;
+        padding: auto;
+    }
+    .blue {
+        color: #4a1d1d;
+        font-size: medium;
+        font-weight: bold;
+        text-align: center;
+        padding: 10;
+        height: 3vh;
+        width: 2vw;
+    }
+    .blue i{
+        margin-top: 15px;
+        font-size: 20px;
+        color: #000000;
+    }
+    #contact{
+        margin-left: 20px;
+        padding: 0;
+    }
+    #contact .blue i{
+        margin-left: 10px;
+    }
+    #contact .icone i{
+        margin-left: 10px;
+    }
+    #contact .font{
+        margin-left: 35px;
+    }
+
+    #contact .fontIcone i {
+        margin-left: 35px;
+        color: #000000;
+    }
+    #contact .fontIcone h3 {
+        margin-left: 25px;
+    }
+    #imageProfil {
+        height: 20vh;
+        width: 20vh;
+        margin: 0 auto;
+        /* padding: 1%; */
+        clip-path: circle(80%);
+    }
+    #competence {
+        padding: 20px;
+        color: #000000;
+    }
+    #education p{
+        color: #000000;
+        font-size: x-small;
+    }
+    #cv_partie_gauche {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    #cv_partie_droite {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        margin: 0;
+    }  
+    
+    
+    #education .font{
+        margin-left: 10px;
+
+    }
+    #references .font{
+        margin-left: 25px;
+
+    }
+    
+    #references p {
+        font-size: small;
+        margin-left: 40px;
+        color: #000000;
+    }
+
+    #references .fontIcone {
+        margin-left: 25px;
+    }
+    #references .fontIcone i {
+        margin-top: 8px;
+        margin-left: 100%;
+        color: #000000;
+    }
+    #references  h3 {
+        margin-left: 25px;
+        color: #000000;
+        font-size: small;
+    }
+
+    #profilDetail p {
+        font-size: small;
+        color: #000000;
+        margin-right: 10px;
+    }
+    #profilDetail h3 {
+        font-size: small;
+        color: #000000;
+    }
+    #experience p{
+        font-size: small;
+        color: #000000;
+        margin-right: 10px;
+    }
+    #experience h3{
+        font-size: small;
+        color: #000000;
+        margin-right: 10px;
+    }
+
+
+    #competences h3{
+        color: #000000;
+        text-justify: auto;
+        letter-spacing: none;
+    }
+    
+    #competences .progress1 {
+        width: 80%;
+        background-color: black;
+        margin-top: 10%;
+        height: 1vh;
+    }
+    
+    .comp .bar .progress2 {
+        width: 20%;
+        background-color: rgb(98, 98, 108);
+        margin-top: 10%;
+        height: 1vh;
+    }
+    
+    .comp .bar .progress3 {
+        width: 70%;
+        background-color: black;
+        margin-top: 10%;
+        height: 1vh;
+    }
+    
+    .comp .bar .progress4 {
+        width: 30%;
+        background-color: rgb(98, 98, 108);
+        margin-top: 10%;
+        height: 1vh;
+    }
+    
+    .comp .bar .progress5 {
+        width: 55%;
+        background-color: var(--bg-couleur2);
+        margin-top: 10%;
+        height: 1vh;
+    }
+    
+    .comp .bar .progress6 {
+        width: 45%;
+        background-color: rgb(98, 98, 108);
+        margin-top: 10%;
+        height: 1vh;
+    }
+
+
+
+}
 /* Fin de la partie responsive de la section profil */
